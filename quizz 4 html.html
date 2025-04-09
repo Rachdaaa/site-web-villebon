@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quizz.css">
+    <script defer src="quizz 2 ecrire son premier site web.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Quizz cours introduction HTML/CSS</h1>
+    </header>
+
+    <form id="quiz-form">
+        <div class="question">
+            <h2>Question 1 :Quelle est la balise qui permet d'insérer une image ?</h2>
+
+
+        <div class="question">
+            <h2>Question 2 : Quelle est la fonction de "src" ?</h2>
+            <label>
+                <input type="radio" name="question2" value="c'est un attribut qui permet d'indiquer la source de l'image">c'est un attribut qui permet d'indiquer la source de l'image
+            </label><br>
+            <label>
+            <input type="radio" name="question2" value="c'est un attribut qui permet de donner à l'image une description alternative">c'est un attribut qui permet de donner à l'image une description alternative
+        </label><br>
+        <label>
+            <input type="radio" name="question2" value="c'est un attribut qui permet de mettre une source url ">c'est un attribut qui permet de mettre une source url 
+        </label><br>
+        </div>
+
+        <div class="question">
+            <h2>Question 3 :peut-on afficher quelque chose sur la page sans utiliser la balise body ?</h2>
+            <label>
+                <input type="radio" name="question3" value="oui">oui
+                </label><br>
+            <label>
+                <input type="radio" name="question3" value="non">non
+            </label><br>
+        </div>
+
+        <button type="button" onclick="checkAnswers()">Soumettre</button>
+    </form>
+
+    <div id="result"></div>
+</div>
+
+</body>
+</html>

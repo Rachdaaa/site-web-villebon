@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quizz.css">
+    <script defer src="quizz4.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Quiz cours 1 PHP </h1>
+    </header>
+
+    <form id="quiz-form">
+        <div class="question">
+            <h2>Question 1 : Peut-on exécuter PHP avec seulement notre oridnateur ?</h2>
+            <label>
+                <input type="radio" name="question1" value="non"> non
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value=" oui"> oui
+            </label><br>
+        </div>
+
+        <div class="question">
+            <h2>Question 2 : De quel(s) serveur(s) avons-nous besoin ?</h2>
+            <label>
+                <input type="radio" name="question2" value="2">seulement Apache
+            </label><br>
+            </label>
+            <label>
+                <input type="radio" name="question2" value="3"> Notre ordinateur suffit
+            </label><br>
+            <label>
+                <input type="radio" name="question2" value="1"> Apache PHP et MSQL
+            </label><br>
+        </div>
+
+        <div class="question">
+            <h2>Question 3 : avons-nous seulement besoin de php pour afficher un site ?</h2>
+            <label>
+                <input type="radio" name="question3" value="non"> non
+            </label><br>
+            <label>
+                <input type="radio" name="question3" value="oui"> oui
+            </label><br>
+            <label>
+        </div>
+
+        <button type="button" onclick="checkAnswers()">Soumettre</button>
+    </form>
+
+    <div id="result"></div>
+</div>
+
+</body>
+</html>

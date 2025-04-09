@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quizz.css">
+    <script defer src="Quizz7 html.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Quiz cours HTML/CSS</h1>
+    </header>
+
+    <form id="quiz-form">
+        <div class="question">
+            <h2>Question 1 : Comment modifier la couleur d'un texte ?</h2>
+            <label>
+                <input type="radio" name="question1" value="Front-color"> Front-color
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="Font-size"> Font-size
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="Color"> Color
+            </label><br>
+        </div>
+
+        <div class="question">
+            <h2>Question 2 : Comment changer la couleur du fond ?</h2>
+            <label>
+                <input type="radio" name="question2" value="Background-family"> Background-family
+            </label><br>
+            <label>
+                <input type="radio" name="question2" value="Background-color"> Background-color 
+            </label><br>
+            <label>
+                <input type="radio" name="question2" value="Font-color"> Font-color
+            </label><br>
+        </div>
+
+        <div class="question">
+            <h2>Question 3 : Comment mettre une image en fond ?</h2>
+            <label>
+                <input type="radio" name="question3" value="img-src"> img-src
+            </label><br>
+            <label>
+                <input type="radio" name="question3" value=" Background-color-img"> Background-color-img
+            </label><br>
+            <label>
+                <input type="radio" name="question3" value="Background-image"> Background-image
+            </label><br>
+        </div>
+
+        <button type="button" onclick="checkAnswers()">Soumettre</button>
+    </form>
+
+    <div id="result"></div>
+</div>
+
+</body>
+</html>

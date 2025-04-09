@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quizz.css">
+    <script defer src="quizz 1 php.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Quiz cours 1 PHP</h1>
+    </header>
+
+    <form id="quiz-form">
+        <div class="question">
+            <h2>Question 1 :Qu'est-ce qu'une condition ?</h2>
+            <label>
+                <input type="radio" name="question1" value="une fonction pouvant faire des boucles"> une fonction pouvant faire des boucles
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value=" une structure conditionnelle"> une structure conditionnelle
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="Un test pour voir si le code est bon"> Un test pour voir si le code est bon
+            </label><br>
+        </div>
+
+        <div class="question">
+            <h2>Question 2 : Combie y'a t-il de condition ?</h2>
+            <label>
+                <input type="radio" name="question2" value="2">2
+            </label><br>
+            <label>
+                <input type="radio" name="question2" value="3"> 3
+            </label><br>
+            <label>
+                <input type="radio" name="question2" value="1"> 4
+            </label><br>
+        </div>
+
+        <div class="question">
+            <h2>Question 3 :Est-ce que la conditiion else est obligatoire ?</h2>
+            <label>
+                <input type="radio" name="question3" value="non"> non
+            </label><br>
+            <label>
+                <input type="radio" name="question3" value="oui"> oui
+            </label><br>
+            <label>
+        </div>
+
+        <button type="button" onclick="checkAnswers()">Soumettre</button>
+    </form>
+
+    <div id="result"></div>
+</div>
+
+</body>
+</html>

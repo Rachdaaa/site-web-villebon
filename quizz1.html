@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quizz.css">
+    <script defer src="quizz1.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Quiz cours 1 Java </h1>
+    </header>
+
+    <form id="quiz-form">
+        <div class="question">
+            <h2>Question 1 : Peut-on modifier une constante ? </h2>
+            <label>
+                <input type="radio" name="question1" value="Oui"> Oui
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="non"> non
+            </label><br>
+            <label>
+        </div>
+
+        <div class="question">
+            <h2>Question 2 : Que contient une variable string ?</h2>
+            <label>
+                <input type="radio" name="question2" value="un chiffre"> un chiffre
+            </label><br>
+            <label>
+                <input type="radio" name="question2" value="du texte"> du texte
+            </label><br>
+
+        <div class="question">
+            <h2>Question 3 :Que contient les variables number ?</h2>
+            <label>
+                <input type="radio" name="question3" value="des nombres"> des nombres
+            </label><br>
+            <label>
+                <input type="radio" name="question3" value="du texte"> du texte
+            </label><br>
+            <label>
+                <input type="radio" name="question3" value="rien de tout cela, ce n'est pas une variable"> rien de tout cela, ce n'est pas une variable            </label>
+        </div>
+
+        <button type="button" onclick="checkAnswers()">Soumettre</button>
+    </form>
+
+    <div id="result"></div>
+</div>
+
+</body>
+</html>

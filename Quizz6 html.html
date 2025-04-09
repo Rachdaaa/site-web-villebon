@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quizz.css">
+    <script defer src="Quizz6 html.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Quiz cours HTML/CSS</h1>
+    </header>
+
+    <form id="quiz-form">
+        <div class="question">
+            <h2>Question 1 : Quelle est la propriété à utiliser pour changer la taille du texte ?</h2>
+            <label>
+                <input type="radio" name="question1" value="Strong"> Strong
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="Font-size"> Font-size
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="Font-family"> Font-family
+            </label><br>
+        </div>
+
+        <div class="question">
+            <h2>Question 2 : comment indiquer une taille ?</h2>
+            <label>
+                <input type="radio" name="question2" value="avec px ou em"> avec px ou em
+            </label><br>
+            <label>
+                <input type="radio" name="question2" value="avec ms"> avec ms 
+            </label><br>
+            <label>
+                <input type="radio" name="question2" value="il suffit juste de mettre la propriété"> il suffit juste de mettre la propriété
+            </label><br>
+        </div>
+
+        <div class="question">
+            <h2>Question 3 : Comment aligner un texte ?</h2>
+            <label>
+                <input type="radio" name="question3" value="avec text-align"> avec text-align
+            </label><br>
+            <label>
+                <input type="radio" name="question3" value="avec font-weight"> avec font-weight
+            </label><br>
+            <label>
+                <input type="radio" name="question3" value="avec font-size"> avec font-size
+            </label><br>
+        </div>
+
+        <button type="button" onclick="checkAnswers()">Soumettre</button>
+    </form>
+
+    <div id="result"></div>
+</div>
+
+</body>
+</html>

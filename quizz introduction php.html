@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quizz.css">
+    <script defer src="quizz introduction php.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Quiz cours introduction PHP</h1>
+    </header>
+
+    <form id="quiz-form">
+        <div class="question">
+            <h2>Question 1 :Qu'est-ce que PHP ?</h2>
+            <label>
+                <input type="radio" name="question1" value="un logiciel de sécurité"> un logiciel de sécurité
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="une application pour developper"> une application pour developper
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="un langage de scripts"> un langage de scripts
+            </label><br>
+        </div>
+
+        <div class="question">
+            <h2>Question 2 : Est t-il un open source ?</h2>
+            <label>
+                <input type="radio" name="question2" value="oui">oui
+            </label><br>
+            <label>
+                <input type="radio" name="question2" value="non"> non
+            </label><br>
+        </div>
+
+        <div class="question">
+            <h2>Question 3 :Qu'est-ce qu'il permet de développer ?</h2>
+            <label>
+                <input type="radio" name="question3" value="des sites web"> des sites webs
+            </label><br>
+            <label>
+                <input type="radio" name="question3" value="des applications"> des applications
+            </label><br>
+            <label>
+            <input type="radio" name="question3" value="des logiciels"> des logiciels
+        </label><br>
+        </div>
+
+        <button type="button" onclick="checkAnswers()">Soumettre</button>
+    </form>
+
+    <div id="result"></div>
+</div>
+
+</body>
+</html>

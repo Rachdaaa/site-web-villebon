@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quizz.css">
+    <script defer src="quizz3.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Quiz cours 2 Java</h1>
+    </header>
+
+    <form id="quiz-form">
+        <div class="question">
+            <h2>Question 1 : pouvons-nous nous passser des accolades ?</h2>
+            <label>
+                <input type="radio" name="question1" value="oui"> oui
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="non">non
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="cela dépend de si c'est une variable ou une fonction"> cela dépend de si c'est une variable ou une fonction
+            </label>
+        </div>
+
+        <div class="question">
+            <h2>Question 2 : peut-on avoir un bloc de code dans un bloc de code ?</h2>
+            <label>
+                <input type="radio" name="question2" value="oui"> oui
+            </label><br>
+            <label>
+                <input type="radio" name="question2" value="non"> non
+            </label><br>
+            </div>
+
+        <div class="question">
+            <h2>Question 3 : combien y'a t-il de niveau de contrôle ?  ?</h2>
+            <label>
+                <input type="radio" name="question3" value="3"> 3
+            </label><br>
+            <label>
+                <input type="radio" name="question3" value="5"> 5
+            </label><br>
+            <label>
+                <input type="radio" name="question3" value="4"> 4
+            </label>
+        </div>
+
+        <button type="button" onclick="checkAnswers()">Soumettre</button>
+    </form>
+
+    <div id="result"></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quizz.css">
+    <script defer src="quizz 2 ecrire son premier site web.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Quizz cours HTML/CSS</h1>
+    </header>
+
+    <form id="quiz-form">
+        <div class="question">
+            <h2>Question 1 :Qu'est-ce qu'un attribut ?</h2>
+            <label>
+                <input type="radio" name="question1" value="Des option qui donnent des informations supplémentaire">Des option qui donnent des informations supplémentaire       
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="Ce sont des balises donnant des information supplémentaire">Ce sont des balises donnant des information supplémentaire
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="Ce sont des balises ouvrantes">Ce sont des balises ouvrantes
+            </label><br>
+        </div>
+
+        <div class="question">
+            <h2>Question 2 : Quelle syntaxe est la bonne ?</h2>
+            <label>
+                <input type="radio" name="question2" value="html/body/body/html">html/body/body/html 
+            </label><br>
+            <input type="radio" name="question2" value="<body><html></body><html>">body/html/body/html/html
+        </label><br>
+        </div>
+
+        <div class="question">
+            <h2>Question 3 :peut-on afficher quelque chose sur la page sans utiliser la balise body ?</h2>
+            <label>
+                <input type="radio" name="question3" value="oui">oui
+                </label><br>
+            <label>
+                <input type="radio" name="question3" value="non">non
+            </label><br>
+        </div>
+
+        <button type="button" onclick="checkAnswers()">Soumettre</button>
+    </form>
+
+    <div id="result"></div>
+</div>
+
+</body>
+</html>

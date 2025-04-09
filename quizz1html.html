@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quizz.css">
+    <script defer src="quizz1html.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Quizz cours introduction HTML/CSS</h1>
+    </header>
+
+    <form id="quiz-form">
+        <div class="question">
+            <h2>Question 1 :Qu'est-ce que veux dire html ?</h2>
+            <label>
+                <input type="radio" name="question1" value="HyperText Market Language"> HyperText Market Language         
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="HyperText Markup Language"> HyperText Markup Language
+            </label><br>
+        </div>
+
+        <div class="question">
+            <h2>Question 2 : Qu'est-ce que veux dire CSS ?</h2>
+            <label>
+                <input type="radio" name="question2" value="Coding Style Sheet">Coding Style Sheet
+            </label><br>
+            <label>
+                <input type="radio" name="question2" value="Cascading Style Sheet">Cascading Style Sheet
+            </label><br>
+        </div>
+
+        <div class="question">
+            <h2>Question 3 :Quels sont les rôles du css et html ?</h2>
+            <label>
+                <input type="radio" name="question3" value="Le HTML constitue la structure d'une page web. Le CSS permet d'ajouter du style.">Le HTML constitue la structure d'une page web. Le CSS permet d'ajouter du style.
+            </label><br>
+            <label>
+                <input type="radio" name="question3" value="Le HTML ermet d'ajouter du style. Le CSS constitue la structure d'une page web.">Le HTML permet d'ajouter du style. Le CSS constitue la structure d'une page web.
+            </label><br>
+            <label>
+            <input type="radio" name="question3" value="Le CSS construit la page et le HTML rajoute le text"> Le CSS construit la page et le HTML rajoute le text
+        </label><br>
+        </div>
+
+        <button type="button" onclick="checkAnswers()">Soumettre</button>
+    </form>
+
+    <div id="result"></div>
+</div>
+
+</body>
+</html>

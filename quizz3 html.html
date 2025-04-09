@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quizz.css">
+    <script defer src="quizz3 html.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Quiz cours HTML/CSS</h1>
+    </header>
+
+    <form id="quiz-form">
+        <div class="question">
+            <h2>Question 1 : Comment intégrer un lien ?</h2>
+            <label>
+                <input type="radio" name="question1" value="Avec l'attribut a puis href"> Avec l'attribut "a" puis "href"
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="Avec l'attribut l puis href"> Avec l'attribut "l" puis "href"
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="Avec l'attribut a puis l"> Avec l'attribut "a" puis "l"
+            </label><br>
+        </div>
+
+        <div class="question">
+            <h2>Question 2 : Qu'est-ce qu'un lien relatif ?</h2>
+            <label>
+                <input type="radio" name="question2" value="un lien hypertexte qui relie deux documents"> un lien hypertexte qui relie deux documents
+            </label><br>
+            <label>
+                <input type="radio" name="question2" value="un lien hypertexte qui relie deux pages du même dossier"> un lien hypertexte qui relie deux pages du même dossier
+            </label><br>
+            <label>
+                <input type="radio" name="question2" value="un lien hypertexte qui relie une page internet externe à un site"> un lien hypertexte qui relie une page internet externe à un site
+            </label><br>
+        </div>
+
+        <div class="question">
+            <h2>Question 3 : Qu'est-ce qu'une ancre ?</h2>
+            <label>
+                <input type="radio" name="question3" value="un repère que l'on peut mettre dans une page HTML si elle est très longue"> un repère que l'on peut mettre dans une page HTML si elle est très longue
+            </label><br>
+            <label>
+                <input type="radio" name="question3" value="un repère que l'on peut mettre quand il y a plusieurs liens"> un repère que l'on peut mettre quand il y a plusieurs liens
+            </label><br>
+            <label>
+                <input type="radio" name="question3" value="un bloc de repère où l'on met tous les liens"> un bloc de repère où l'on met tous les liens
+            </label><br>
+        </div>
+
+        <button type="button" onclick="checkAnswers()">Soumettre</button>
+    </form>
+
+    <div id="result"></div>
+</div>
+
+</body>
+</html>
+

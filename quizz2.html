@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quizz.css">
+    <script defer src="quizz2.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Quiz cours 2 Java</h1>
+    </header>
+
+    <form id="quiz-form">
+        <div class="question">
+            <h2>Question 1 : Qu'a-t-on besoin pour effectuer un programme ?</h2>
+            <label>
+                <input type="radio" name="question1" value="une classe"> une classe
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="une fonction main"> une fonction main
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="une variable"> une variable
+            </label>
+        </div>
+
+        <div class="question">
+            <h2>Question 2 : Qu'est-ce qu'une fonction ?</h2>
+            <label>
+                <input type="radio" name="question2" value="une seconde variable"> une seconde variable
+            </label><br>
+            <label>
+                <input type="radio" name="question2" value="un bloc de fonction"> un bloc de fonction
+            </label><br>
+            <label>
+                <input type="radio" name="question2" value="un bloc de code"> un bloc de code
+            </label><br>
+        </div>
+
+        <div class="question">
+            <h2>Question 3 : Qu'est-ce qu'une classe ?</h2>
+            <label>
+                <input type="radio" name="question3" value="des fonctions int/string"> des fonctions int/string
+            </label><br>
+            <label>
+                <input type="radio" name="question3" value="un ensemble de variables"> un ensemble de variables
+            </label><br>
+            <label>
+                <input type="radio" name="question3" value="une méthode se trouvant dans une fonction"> une méthode se trouvant dans une fonction
+            </label>
+        </div>
+
+        <button type="button" onclick="checkAnswers()">Soumettre</button>
+    </form>
+
+    <div id="result"></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quizz.css">
+    <script defer src="quizz5.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Quiz cours 4 Java</h1>
+    </header>
+
+    <form id="quiz-form">
+        <div class="question">
+            <h2>Question 1 : A quoi sert une boucle ?</h2>
+            <label>
+                <input type="radio" name="question1" value="Répéter à l'infini un code"> Répéter à l'infini un code
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="Eviter de réécrire la même commande plusieurs fois"> Eviter de réécrire la même commande plusieurs fois
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="Faire des modification rapidement"> Faire des modification rapidement
+            </label>
+        </div>
+
+        <div class="question">
+            <h2>Question 2 : Qu'elle est la différence entre for et while ?</h2>
+            <label>
+                <input type="radio" name="question2" value="For est pour une répétition définie et while est pour une répétitiion indéfénie"> For est pour une répétition définie et while est pour une répétitiion indéfénie
+            </label><br>
+            <label>
+                <input type="radio" name="question2" value="For est pour une répétition indéfinie et while est pour une répétition définie"> For est pour une répétition indéfinie et while est pour une répétition définie
+            </label><br>
+            <label>
+                <input type="radio" name="question2" value="For est pour une répétiton definie et while est pour une répétition jusqu'à qune condition soit remplis"> For est pour une répétiton definie et while est pour une répétition jusqu'à qune condition soit remplis
+            </label><br>
+        </div>
+
+
+        <button type="button" onclick="checkAnswers()">Soumettre</button>
+    </form>
+
+    <div id="result"></div>
+</div>
+
+</body>
+</html>

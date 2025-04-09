@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quizz.css">
+    <script defer src="quizz1.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Quiz cours 1 Java </h1>
+    </header>
+
+    <form id="quiz-form">
+        <div class="question">
+            <h2>Question 1 : Qu'est-ce que Java ? </h2>
+            <label>
+                <input type="radio" name="question1" value="un language de programmation"> Un language de programmation
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="Un logiciel de programmation"> Un logiciel de programmation
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="Une plateforme de programmation"> une plateforme de programmation
+            </label>
+        </div>
+
+        <div class="question">
+            <h2>Question 2 : Qu'est-ce qu'une variable ?</h2>
+            <label>
+                <input type="radio" name="question2" value="L'association d’un nom à une valeur.">  L'association d’un nom à une valeur.
+            </label><br>
+            <label>
+                <input type="radio" name="question2" value="Ensemble d’instructions qui effectuent une tâche"> Ensemble d’instructions qui effectuent une tâche
+            </label><br>
+            <label>
+                <input type="radio" name="question2" value="Bloc de mémoire où des données de même type sont rangées côte à côte."> Bloc de mémoire où des données de même type sont rangées côte à côte.
+            </label>
+        </div>
+
+        <div class="question">
+            <h2>Question 3 :Combien y'a t-il de type d'opérateur ?</h2>
+            <label>
+                <input type="radio" name="question3" value="2"> 2
+            </label><br>
+            <label>
+                <input type="radio" name="question3" value="4"> 4
+            </label><br>
+            <label>
+                <input type="radio" name="question3" value="3"> 3
+            </label>
+        </div>
+
+        
+
+        <button type="button" onclick="checkAnswers()">Soumettre</button>
+    </form>
+
+    <div id="result"></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quizz.css">
+    <script defer src="quizz3 premier script.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Quiz cours 3 PHP </h1>
+    </header>
+
+    <form id="quiz-form">
+        <div class="question"><h2>Par quoi commence un script php?</h2>
+            <label>
+                <input type="radio" name="question1" value="la balise <?php"> la balise <?php
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="la balise ?>"> la balise ?>
+
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="la balise html"> la balise html
+
+            </label><br>
+        </div>
+
+        <div class="question">
+            <h2>Question 2 : Peut-on insérer le php n'importe où ?</h2>
+            <label>
+                <input type="radio" name="question2" value="oui">oui
+            </label><br>
+            <label>
+                <input type="radio" name="question2" value="non"> non
+            </label><br>
+            <label>
+                <input type="radio" name="question2" value="oui dans le html"> oui dans le html
+            </label><br>
+        </div>
+
+        <div class="question">
+            <h2>Question 3 : comment on affiche du texte en php?</h2>
+            <label>
+                <input type="radio" name="question3" value="non"> avec la commande <?php
+            </label><br>
+            <label>
+                <input type="radio" name="question3" value="oui"> on ne peux pas c'est que le html
+            </label><br>
+            <label>
+                <input type="radio" name="question3" value="avec la commande echo"> avec la commande echo
+            </label><br>
+            <label>
+        </div>
+
+        <button type="button" onclick="checkAnswers()">Soumettre</button>
+    </form>
+
+    <div id="result"></div>
+</div>
+
+</body>
+</html>

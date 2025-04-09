@@ -1,0 +1,147 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Couleur de fond plus douce */
+}
+
+header {
+    background-color: #077217;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+}
+
+.search-bar button {
+    background-color: #fff;
+    color: #077217;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #f1f1f1;
+}
+
+.container {
+    display: flex;
+    align-items: left;
+    padding: 40px 30px;
+    background-color: #f4f4f9; /* Couleur de fond plus douce */
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.imagelog {
+    width: 200px;
+    height: auto;
+    margin-right: 40px;
+}
+
+.resum {
+    max-width: 600px;
+}
+
+/* New rectangle style */
+.rectangle {
+    width: 100%;
+    height: 100px; /* Increased height */
+    background-color: #077217; /* Green color */
+    margin: 20px 0;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.carre-container {
+    display: flex;
+    flex-wrap: nowrap; /* Ensure no wrapping */
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 20px;
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+}
+
+.carre {
+    width: 200px;
+    background-color: #077217;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.carre ul {
+    list-style-type: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.carre ul li {
+    margin-bottom: 10px;
+}
+
+.carre ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.image {
+    width: 150px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #666;
+}
+
